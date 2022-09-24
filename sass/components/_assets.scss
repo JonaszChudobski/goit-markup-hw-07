@@ -1,0 +1,21 @@
+.assets {
+  padding-top: 81px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    & li {
+      flex-basis: calc((100% - 90px) / 4);
+    }
+  }
+  &__description {
+    @include assets__description;
+    margin-top: 0;
+  }
+  &__heading {
+    margin: 30px 0 10px 0;
+  }
+}

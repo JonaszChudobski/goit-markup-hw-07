@@ -1,0 +1,183 @@
+$realblack-color: #000;
+$black-color: #212121;
+$white-color: #fff;
+$blue-color: #2196f3;
+$darkgrey-color: #2f303a;
+$grey-color: #757575;
+$studioteam-color: #f5f4fa;
+$border-color: #ececec;
+$social-color: #afb1b8;
+$modal-background: #0000001a;
+
+@mixin h1 {
+  color: $white-color;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+}
+
+@mixin h2 {
+  color: $black-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+@mixin h3 {
+  color: $black-color;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+@mixin assets__description {
+  color: $grey-color;
+  font-size: 14px;
+  line-height: 171%;
+}
+
+@mixin big-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #fff;
+}
+
+@mixin filters__buttons {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+@mixin logo-web {
+  color: $blue-color;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+@mixin logo-studio {
+  color: $realblack-color;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+@mixin menu-down__city {
+  color: $white-color;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+}
+
+@mixin menu-down__email {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+}
+
+@mixin menu-down__header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+@mixin menu-down__input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@mixin menu__link {
+  color: $black-color;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+@mixin menu__email {
+  color: $grey-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+@mixin modal__heading {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+}
+
+@mixin modal__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: $grey-color;
+}
+
+@mixin modal__placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+
+@mixin modal__policy-label {
+  color: rgba(117, 117, 117, 0.5);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+
+@mixin projects__overlay {
+  color: $white-color;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+}
+
+@mixin projects__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+}
+
+@mixin projects__type {
+  color: $grey-color;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 188%;
+}
+
+@mixin team__name {
+  color: $black-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 118.75%;
+}
+
+@mixin team__role {
+  color: $grey-color;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+@mixin what-we-do__background {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: $white-color;
+}

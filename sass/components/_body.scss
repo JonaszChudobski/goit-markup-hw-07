@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Raleway, sans-serif;
+  color: $black-color;
+  width: 1600px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  @include h1;
+  text-align: center;
+  margin-top: 100px;
+}
+
+h2 {
+  @include h2;
+  text-align: center;
+}
+
+h3 {
+  @include h3;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}

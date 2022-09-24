@@ -1,0 +1,10 @@
+.logo-web {
+  @include logo-web;
+}
+
+.logo-studio {
+  @include logo-studio;
+  &--menu-down {
+    color: $white-color;
+  }
+}

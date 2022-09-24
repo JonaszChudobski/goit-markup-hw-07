@@ -1,0 +1,159 @@
+.modal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: $modal-background;
+  &--is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &__window {
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    border-radius: 4px;
+    background: $white-color;
+    animation-name: modal-effect;
+    animation-duration: 3000ms;
+    animation-timing-function: ease;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  &__xbutton {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 490px;
+    top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white-color;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  &__form {
+    position: relative;
+  }
+
+  &__container {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 448px;
+  }
+
+  &__heading {
+    @include modal__heading;
+    text-align: center;
+    margin: 0 0 12px 0;
+  }
+
+  &__label {
+    @include modal__label;
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 12px;
+    top: 30px;
+    fill: $black-color;
+  }
+
+  &__input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+    height: 40px;
+    margin: 4px 0 10px 0;
+    outline: none;
+    padding-left: 42px;
+    &:focus {
+      border: 1px solid $blue-color;
+      & + .modal__icon {
+        fill: $blue-color;
+      }
+    }
+  }
+
+  &__comment {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    width: 448px;
+    height: 120px;
+    margin: 4px 0 20px 0;
+    padding: 12px 0 0 16px;
+    outline: none;
+    &:focus {
+      border: 1px solid $blue-color;
+    }
+
+    &::placeholder {
+      @include modal__placeholder;
+    }
+  }
+
+  &__policy-container {
+    margin: 0 0 30px 0;
+    padding: 0;
+    position: relative;
+  }
+
+  &__policy-label {
+    @include modal__policy-label;
+    margin: 0 0 30px 12px;
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: -10px;
+      width: 16px;
+      height: 15px;
+      background-image: url("../images/icon-unchecked.svg");
+    }
+  }
+
+  .modal__policy-input {
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    &:checked + .modal__policy-label::before {
+      background-image: url("../images/icon-checked.svg");
+    }
+  }
+
+  &__policy-link {
+    text-decoration: underline;
+    color: $blue-color;
+  }
+}
+
+@keyframes modal-effect {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.5);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

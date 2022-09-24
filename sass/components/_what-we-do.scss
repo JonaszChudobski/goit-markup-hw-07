@@ -1,0 +1,31 @@
+.what-we-do {
+  padding-top: 0;
+
+  &__heading {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  &__background {
+    @include what-we-do__background;
+    width: 370px;
+    padding: 27px 0 27px;
+    position: absolute;
+    top: 224px;
+    text-align: center;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+  }
+
+  &__img {
+    width: 370px;
+    height: 294px;
+  }
+}
